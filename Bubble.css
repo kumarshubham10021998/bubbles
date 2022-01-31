@@ -1,0 +1,171 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* animation-delay:infinite; */
+    animation-duration: 5s;
+    animation-name: colour;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+    
+}
+body{
+    
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.bubbles{
+   position: absolute; 
+  height: 100px;
+  width: 100%;
+
+  z-index: 0;
+  /* overflow: hidden; */
+  /* top: 0px ;
+  left: 0 px; */
+  
+}
+.bubble{
+    position: absolute;
+    bottom: 10px;
+    height: 100%;
+    background-color: transparent;
+    box-shadow:  0 0px 30px red;
+    border-radius: 50%;
+    animation: flying 2s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+}
+.bubble:nth-child(1){
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    animation-duration: 10s;
+}
+.bubble:nth-child(2){
+    width: 200px;
+    height: 200px;
+    left: 20%;
+    animation-duration: 5s;
+}
+.bubble:nth-child(3){
+    width: 150px;
+    height: 150px;
+    right:50%;
+    animation-duration: 9s;
+}
+.bubble:nth-child(4){
+    width: 200px;
+    height: 200px;
+    left: 100%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(5){
+    width: 150px;
+    height: 150px;
+    right: 50%;
+    animation-duration: 10s;
+}
+.bubble:nth-child(6){
+    width: 100px;
+    height: 100px;
+    right: 95%;
+    animation-duration: 7s;
+}
+.bubble:nth-child(7)
+{
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(8)
+{
+    width: 150px;
+    height: 150px;
+    left: 98%;
+    animation-duration: 10s;
+}
+.bubble:nth-child(9){
+    width: 100px;
+    height: 100px;
+    right: 100%;
+    animation-duration: 3s;
+}
+.bubble:nth-child(10){
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    animation-duration: 7s;
+}
+@keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translate(-50);
+    }
+    50%{
+        transform: translate(450px);
+    }
+    100%{
+        bottom: 400px;
+        transform: translate(-700px);
+    }
+    0%{
+        top: 400px;
+        transform: translate(400px);
+    }
+    50%{
+        top: 100px;
+        transform: translate(500px);
+    }
+    100%{
+        top:-100px ;
+        transform: translate(700);
+    }
+}
+@keyframes colour {
+    0% {
+       background-colour : red; 
+       
+    }
+  10% {
+      background-color: antiquewhite;
+  }
+  20%{
+      background-color: azure;
+  }
+  30%{
+      background-color: blanchedalmond;
+  }
+  40%{
+      background-color: blueviolet;
+  }
+  50% {
+      background-color: brown;
+  }
+   80%{
+       background-color: burlywood;
+   }
+   100%{
+       background-color: crimson;
+   }
+   130%{
+       background-color: cyan;
+   }
+   150%{
+       background-color: darkcyan;
+   }
+   170%{
+       background-color: darkturquoise;
+   }
+   200% {
+       background-color: greenyellow;
+   }
+   210% {
+       background-color: magenta;
+   }
+}
